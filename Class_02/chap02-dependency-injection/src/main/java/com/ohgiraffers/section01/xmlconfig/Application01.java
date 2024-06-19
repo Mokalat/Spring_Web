@@ -6,7 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application01 {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("section01/xmlconfig/spring-config.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("section01/xmlconfig/spring-context.xml");
         MemberDTO member =context.getBean(MemberDTO.class);
+        System.out.println(member);
     }
 }

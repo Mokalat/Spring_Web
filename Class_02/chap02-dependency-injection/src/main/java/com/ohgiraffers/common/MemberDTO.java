@@ -8,13 +8,17 @@ public class MemberDTO {
     private String phone;
     private Account personalAccount;
 
-    
+
     public MemberDTO(int sequence, String name, String email, String phone, Account personalAccount) {
         this.sequence = sequence;
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.personalAccount = personalAccount;
+    }
+
+    public MemberDTO() {
+
     }
 
     public int getSequence() {
