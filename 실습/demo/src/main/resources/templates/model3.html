@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Example</title>
+    <script>
+        window.onload=function (){
+            var error = document.getElementById('authority');
+            if (error == "abnormal" ) {
+                alert("error");
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="/response" method="post">
+    <label for="message">메세지:</label>
+    <input type="text" id="message" name="message">
+    <label for="authority">권한 선택:</label>
+    <select id="authority" name="authority">
+        <option value="normal">정상 응답</option>
+        <option value="abnormal">비정상 응답</option>
+    </select>
+    <button type="submit">제출</button>
+</form>
+
+
+</body>
+</html>

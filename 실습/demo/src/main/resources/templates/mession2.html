@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script  type="text/javascript">
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            if (category === 'Cloud') {
+                alert('클라우드를 선택하셨습니다.');
+                setTimeout(() => {
+                    window.location.href = '/'; // index.html로 리다이렉트
+                }, 1000); // 1초 후에 리다이렉트
+            }
+        };
+    </script>
+</head>
+<body >
+<p th:text="${category}"></p>
+</body>
+</html>

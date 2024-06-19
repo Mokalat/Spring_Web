@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${forwardMessage}"></h1>
+<!--<input type="text" value="글을 입력해주세요" id="id1">-->
+<!--<button onclick="input();">입력</button>-->
+<!--<h3 id="id2"></h3>-->
+
+
+<form action="mession1" method="get">
+    <input type="text" value="다른 버전" name="pathValue">
+    <input type="submit" value="전송">
+</form>
+
+<script>
+    var input=function (){
+        console.log(1);
+        var a=document.querySelector("#id1").value;
+        document.querySelector("#id2").innerText=a;
+        document.querySelector("#id1").value="";
+        document.querySelector("#id1").focus();
+    }
+</script>
+</body>
+</html>
